@@ -3,7 +3,7 @@ package com.cbistech.app.views;
 import android.os.Build;
 import android.os.Environment;
 
-import com.primelite.shukran.BaseActivity;
+import com.cbistech.app.BaseActivity;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -152,7 +152,7 @@ public class PookieLogger {
         String encriptmessage = sBody;
 
         try {
-            File root = new File(Environment.getExternalStorageDirectory(), "Shukran");
+            File root = new File(Environment.getExternalStorageDirectory(), "pookie");
             if (!root.exists()) {
                 root.mkdirs();
             }
